@@ -19,7 +19,7 @@ class MainActivity : ComponentActivity() {
         enableEdgeToEdge()
         setContent {
             Swipe_AssTheme {
-
+                Text("Screen 1 ")
             }
         }
     }
