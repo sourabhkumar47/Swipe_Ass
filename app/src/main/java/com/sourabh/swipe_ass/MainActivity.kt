@@ -11,15 +11,18 @@ import androidx.compose.material3.Text
 import androidx.compose.runtime.Composable
 import androidx.compose.ui.Modifier
 import androidx.compose.ui.tooling.preview.Preview
+import com.sourabh.swipe_ass.presentation.screens.ProductListScreen
 import com.sourabh.swipe_ass.ui.theme.Swipe_AssTheme
+import dagger.hilt.android.AndroidEntryPoint
 
+@AndroidEntryPoint
 class MainActivity : ComponentActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         enableEdgeToEdge()
         setContent {
             Swipe_AssTheme {
-                Text("Screen 1 ")
+                ProductListScreen()
             }
         }
     }
